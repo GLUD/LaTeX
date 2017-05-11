@@ -1,0 +1,69 @@
+\documentclass{beamer}
+
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx} % Paquete para agregar graficos
+\usepackage{multicol} % Paquete para agregar varias columnas
+\usepackage{listings} % Paquete para agregar código
+\usepackage{hyperref} % Paquete para agregar hiperlinks (NAVEGACIÓN A TRAVÉS DEL DOCUMENTO), como la imagen.
+\usepackage{enumerate} % enumerados
+\usepackage{verbatim} % comentarios
+\usepackage{amsmath}
+\usepackage[spanish]{babel}
+
+\usetheme{Warsaw} % Tema de la presentación
+\usecolortheme{seahorse}  % Colores de la presentación
+\useoutertheme{shadow} % Aspecto de cabezal y pie de página
+\usefonttheme{serif} % Estilo de la letra
+\useinnertheme{rectangles} % Aspecto de listas y bloques
+
+\graphicspath{ {Image/} }  %%  le indica a LaTeX que las imágenes están guardadas en una carpeta llamada Image bajo el directorio actual. 
+
+% \ttfamily Mecanografia        \rmfamily   % Tipos de letra
+
+\hypersetup{pdftitle= LaTeX, 
+            pdfauthor=LeidyAldana,
+            colorlinks=false,
+            urlcolor=blue,
+            pdfstartview=FitH,
+            pdfpagemode=UseOutlines,
+            pdfnewwindow,
+            breaklinks
+          }
+
+\begin{document}
+
+    \include{portada}
+    % ¿Qué es LaTeX? y su historia
+    \include{Theory/HistoryPhilosophy}
+    
+    % ¿Qué se necesita para elaborar algo en LaTeX?
+    \include{Theory/Components}
+    
+    % Proceso de compilación
+    \include{compilacion/compilando}
+    \include{compilacion/compilando0}
+    \include{compilacion/compilando1}
+    \include{compilacion/compilando2}
+    
+    % Ingreso a un entorno de desarrollo virtual
+    \include{Taller/Entrar}
+    \include{Taller/Taller}
+    % Inicio del documento (tipoDocumento, tipos, ManejoDeAlgunasCosas)
+    \include{Taller/Inicio}
+    % Caracteres especiales, 
+    \include{Taller/Caracteres}
+    
+    \include{Taller/figuras}
+    \include{Taller/Listas}
+    
+    %\include{diap0}
+    %\include{diap1}
+
+
+
+\end{document}
+
+
+
+% 'porque usar latex?
+%http://nokyotsu.com/latex/guia.html

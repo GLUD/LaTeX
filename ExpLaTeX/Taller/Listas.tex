@@ -1,0 +1,99 @@
+\begin{frame}
+    \frametitle{Listas en \LaTeX{}}
+
+    \begin{columns}[onlytextwidth]
+        \begin{column}{0.48\textwidth}
+            \centering
+            \begin{exampleblock}{Con un guión definido} % MARCO width=8cm, height=3cm
+                \begin{itemize}
+                    \item[$*$] Madrid.
+                    \item Castilla la Mancha.
+                    \item Castilla y León.
+                    \begin{itemize}
+                        \item Segovia.
+                        \item Ávila.
+                    \end{itemize}
+                \end{itemize}
+            \end{exampleblock}
+        \begin{exampleblock}{Con un guión definido} % MARCO width=8cm, height=3cm    
+            \begin{enumerate}[1.]
+                \item Manzanas.
+                \item Plátanos.
+                \item Pescado fresco.
+                \begin{enumerate}[a)]
+                    \item Emperador.
+                    \item Gallo.
+                \end{enumerate}
+            \end{enumerate}
+        \end{exampleblock}      
+            %\rule{100pt}{150pt}% Place your graphic here
+        \end{column}
+        
+        \begin{column}{0.46\textwidth}
+            \begin{exampleblock}{} %marco tipo block
+                \begin{description}
+                    \item[Australia:] Canguro.
+                    \item[EEUU:] Águila calva.
+                    \item[España:] Toro.
+                    \item[México:] Águila real.
+                \end{description}
+            \end{exampleblock}
+        \end{column}
+    \end{columns} 
+\end{frame}
+
+
+% \usepackage{hyperref}
+%   para colocar hipervinculos
+%\href{url}{http://www.texample.net/tikz/resources/}
+
+%   Above = antedicho, encima, arriba, encima de
+
+
+\begin{comment}
+%-------------- ENUMERACION
+
+\begin{itemize}
+    \item[$*$] Madrid.
+    \item Castilla la Mancha.
+    \item Castilla y León.
+    \begin{itemize}
+        \item Segovia.
+        \item Ávila.
+    \end{itemize}
+\end{itemize}
+___________________________________
+
+\begin{enumerate}[1.]
+    \item Manzanas.
+    \item Plátanos.
+    \item Pescado fresco.
+    \begin{enumerate}[a)]
+        \item Emperador.
+        \item Gallo.
+    \end{enumerate}
+\end{enumerate}
+
+__________________________________-
+
+\begin{description}
+    \item[Australia:] Canguro.
+    \item[EEUU:] Águila calva.
+    \item[España:] Toro.
+    \item[México:] Águila real.
+\end{description}
+
+\end{comment}
+
+
+
+
+%  \includegraphics[width=\textwidth]{ //NOMBRE DE LA IMAGEN }   == linea para añadir imagenes gracias a la librería.
+
+% "  " \par aplica Sangría
+
+%  \textcolor{red}{Hola} == coloca el texto en color.
+
+
+% "En el mundo del código abierto, la vergüenza es uno de los principales factores de motivación hacia el aumento de la calidad de su código!)" 
+% página 34, Software libre para una sociedad libre
