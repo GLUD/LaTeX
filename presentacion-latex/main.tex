@@ -2,9 +2,11 @@
 
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx} % Paquete para agregar graficos
+\usepackage{hyperref} % paquete para hipervínculos
 \usepackage{multicol} % Paquete para agregar varias columnas
 \usepackage{listings} % Paquete para agregar código
-\usepackage{hyperref} % Paquete para agregar hiperlinks (NAVEGACIÓN A TRAVÉS DEL DOCUMENTO), como la imagen.
+\usepackage{hyperref} % Paquete para agregar hiperlinks (NAVEGACIÓN A TRAVÉSDEL DOCUMENTO), como la imagen.
+\usepackage{verbatim} % para codigo crudo
 \usepackage{enumerate} % enumerados
 \usepackage{verbatim} % comentarios
 \usepackage{amsmath}
@@ -21,7 +23,7 @@
 % \ttfamily Mecanografia        \rmfamily   % Tipos de letra
 
 \hypersetup{pdftitle= LaTeX, 
-            pdfauthor=LeidyAldana,
+            pdfauthor=LeidyAldana SebastianTabares,
             colorlinks=false,
             urlcolor=blue,
             pdfstartview=FitH,
@@ -39,12 +41,6 @@
     % ¿Qué se necesita para elaborar algo en LaTeX?
     \include{Theory/Components}
     
-    % Proceso de compilación
-    \include{compilacion/compilando}
-    \include{compilacion/compilando0}
-    \include{compilacion/compilando1}
-    \include{compilacion/compilando2}
-    
     % Ingreso a un entorno de desarrollo virtual
     \include{Taller/Entrar}
     \include{Taller/Taller}
@@ -52,18 +48,22 @@
     \include{Taller/Inicio}
     % Caracteres especiales, 
     \include{Taller/Caracteres}
-    
-    \include{Taller/figuras}
     \include{Taller/Listas}
     
+    \include{Taller/Modular}
+    \include{Taller/figuras}
+    \include{Taller/Bibliografia}
+    \include{Taller/Bibcrudo}
+    \include{Taller/Tablas}
     %\include{diap0}
     %\include{diap1}
-
-
-
+    
+    % Proceso de compilación
+    \include{compilacion/compilando}
+    \include{compilacion/compilando0}
+    \include{compilacion/compilando1}
+    \include{compilacion/compilando2}
 \end{document}
-
-
 
 % 'porque usar latex?
 %http://nokyotsu.com/latex/guia.html
